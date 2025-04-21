@@ -7,7 +7,7 @@ The goal of this project:
 
 The goal is to gain knowledge of the ip addresses that are connecting to my personal firewall.
 
-For obvious reasons, I didn't include the Maxmind GeoIP database file in the repository.  You can signed up for an account at (https://maxmind.com)[https://maxmind.com]
+For obvious reasons, I didn't include the Maxmind GeoIP database file in the repository.  You can signed up for an account at [https://maxmind.com](https://maxmind.com)
 
 ## Running
 
