@@ -9,8 +9,15 @@ The goal is to gain knowledge of the ip addresses that are connecting to my pers
 
 For obvious reasons, I didn't include the Maxmind GeoIP database file in the repository.  You can signed up for an account at [https://maxmind.com](https://maxmind.com)
 
-## Running
+### Updates
 
-```bash
-docker run --rm -it -v ./ip_list.txt:/app/ip_list.txt geoip
+Updated to consider the following:
+
+1. Maxmind's database is updating; therefore good idea not the build into the docker image.
+2. Therefore map the database file into the volume command (as seen below).
+
+## Running - Docker CLI
+
+```sh
+docker run --rm -it -v ./GeoLite2-ASN.mmdb:/app/GeoLite2-ASN.mmdb -v ./ip_list.txt:/app/ip_list.txt geoip
 ```
